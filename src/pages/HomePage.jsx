@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { CLINIC_INFO, SMILE_DESIGN_DETAILS, SERVICES_LIST, TESTIMONIALS, FAQS } from '../data/dentalData';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
+import ClinicTourGallery from '../components/ClinicTourGallery';
 
 export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onOpenSimulator }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -474,62 +475,15 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
         </div>
       </section>
 
-      {/* ================= CLINIC VIRTUAL TOUR BANNER ================= */}
-      <section className="relative py-16 bg-slate-50 border-y border-slate-200">
+      {/* ================= CLINIC VIRTUAL TOUR & GALLERY ================= */}
+      <section className="relative py-20 bg-slate-50/80 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-7 rounded-3xl overflow-hidden border border-slate-200 shadow-xl relative">
-              <img
-                src="/images/clinic-interior.jpg"
-                alt="Dental House Clinic Interior Jaipur"
-                className="w-full h-auto aspect-[16/9] object-cover"
-              />
-              <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-cyan-400 text-cyan-800 text-xs font-bold shadow-md">
-                  Shop No. 1, Gokul Tower, Jaipur
-                </span>
-              </div>
-            </div>
-
-            <div className="lg:col-span-5 space-y-4">
-              <span className="text-xs font-bold uppercase tracking-wider text-cyan-700">
-                Pristine Hygiene & Comfort
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-outfit font-black text-slate-900">
-                A Spa-Like Dental Clinic Designed for Zero Anxiety
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Gone are the intimidating dentist chairs of the past. Dental House at Gokul Tower is engineered with ergonomic memory-foam dental suites, calming ambient soundscapes, Class-B autoclave sterilizers, and German rotary instruments.
-              </p>
-
-              <ul className="space-y-2 text-xs text-slate-700">
-                <li className="flex items-center space-x-2">
-                  <Check className="w-4 h-4 text-emerald-600" />
-                  <span>100% Sealed Single-Use Sterile Pouches</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Check className="w-4 h-4 text-emerald-600" />
-                  <span>High-Resolution Digital Intraoral 3D Cameras</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Check className="w-4 h-4 text-emerald-600" />
-                  <span>Comfortable Waiting Lounge with Free Wi-Fi</span>
-                </li>
-              </ul>
-
-              <div className="pt-2">
-                <button
-                  onClick={() => setActivePage('contact')}
-                  className="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs uppercase tracking-wider flex items-center space-x-2 border border-slate-300 shadow-sm"
-                >
-                  <MapPin className="w-4 h-4 text-cyan-600" />
-                  <span>Get Directions to Gokul Tower</span>
-                </button>
-              </div>
-            </div>
-
-          </div>
+          <ClinicTourGallery 
+            onOpenBooking={onOpenBooking}
+            setActivePage={setActivePage}
+            title="Step Inside Dental House, Gokul Tower"
+            subtitle="Explore our real operatory suite, sterilization bay, comfortable waiting lounge, and reception desk. Designed for painless treatments and zero anxiety."
+          />
         </div>
       </section>
 

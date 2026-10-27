@@ -44,7 +44,7 @@ export default function App() {
         );
       case 'contact':
         return (
-          <ContactPage />
+          <ContactPage onOpenBooking={() => setIsBookingOpen(true)} />
         );
       case 'home':
       default:

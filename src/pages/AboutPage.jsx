@@ -13,6 +13,7 @@ import {
   MapPin 
 } from 'lucide-react';
 import { CLINIC_INFO } from '../data/dentalData';
+import ClinicTourGallery from '../components/ClinicTourGallery';
 
 export default function AboutPage({ onOpenBooking }) {
   const credentials = [
@@ -126,37 +127,24 @@ export default function AboutPage({ onOpenBooking }) {
         </div>
       </section>
 
-      {/* Clinic Ambience & Sterilization */}
+      {/* Clinic Ambience & Real Facilities Showcase */}
       <section className="mt-24 max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-200 space-y-8">
-          <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-cyan-700">
-              The Dental House Standard
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-outfit font-black text-slate-900">
-              Hygiene, Technology & Comfort
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-500">
-              Experience the difference of a clinic built around your safety and serenity
-            </p>
-          </div>
+        <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-200 space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-6 space-y-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-cyan-700">
+                The Dental House Standard
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-outfit font-black text-slate-900">
+                Hygiene, Technology & Zero-Stress Comfort
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Experience the difference of a clinic built around your safety and serenity. Dr. Priyanka Katewa personally supervises all sterilization and clinical protocols at Gokul Tower.
+              </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
-              <img
-                src="/images/clinic-interior.jpg"
-                alt="Clinic sterilization and operatory"
-                className="w-full h-auto aspect-[16/10] object-cover"
-              />
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-outfit font-bold text-slate-900">
-                Why Patients Trust Dental House Jaipur
-              </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 pt-2">
                 {clinicHighlights.map((hl, idx) => (
-                  <li key={idx} className="flex items-start space-x-2.5 text-xs text-slate-600">
+                  <li key={idx} className="flex items-start space-x-2.5 text-xs text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>{hl}</span>
                   </li>
@@ -164,10 +152,34 @@ export default function AboutPage({ onOpenBooking }) {
               </ul>
 
               <div className="p-4 rounded-2xl bg-cyan-50 border border-cyan-200 text-xs text-slate-700">
-                <span className="font-bold text-cyan-800 block mb-1">Location Details:</span>
+                <span className="font-bold text-cyan-800 block mb-1">Clinic Address:</span>
                 Shop No. 1, Gokul Tower, Near SBI Bank, Kardhani, Kalwar Road, Jaipur (Rajasthan).
               </div>
             </div>
+
+            <div className="lg:col-span-6">
+              {/* Highlight card with the doctor's consultation suite photo */}
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md relative group">
+                <img
+                  src="/images/clinic-consultation-suite.png"
+                  alt="Dr. Priyanka Katewa Consultation and Operatory Suite"
+                  onError={(e) => { e.target.src = "/images/image copy 4.png"; }}
+                  className="w-full h-auto aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute bottom-3 left-3 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 rounded-xl text-white text-xs font-semibold">
+                  Dr. Priyanka's Consultation Suite • Shop No. 1, Gokul Tower
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Full Interactive Virtual Tour Gallery */}
+          <div className="pt-8 border-t border-slate-200">
+            <ClinicTourGallery 
+              onOpenBooking={onOpenBooking}
+              title="Virtual Tour of Our 6 Clinical Spaces"
+              subtitle="Browse through real photographs of our treatment operatory, patient lounge, and front office."
+            />
           </div>
         </div>
       </section>

@@ -14,8 +14,9 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { CLINIC_INFO } from '../data/dentalData';
+import ClinicTourGallery from '../components/ClinicTourGallery';
 
-export default function ContactPage() {
+export default function ContactPage({ onOpenBooking }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -324,6 +325,15 @@ export default function ContactPage() {
           </div>
 
         </div>
+      </section>
+
+      {/* Visual Landmark & Clinic Walkthrough Guide */}
+      <section className="mt-16 max-w-7xl mx-auto px-4 sm:px-6">
+        <ClinicTourGallery 
+          onOpenBooking={onOpenBooking}
+          title="Visual Landmark & Clinic Arrival Guide"
+          subtitle="Here is what to look for when you arrive at Shop No. 1, Gokul Tower (Near SBI Bank). Automatic photo tour of our operatory, reception, and patient lounges."
+        />
       </section>
     </div>
   );

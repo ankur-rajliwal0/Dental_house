@@ -283,3 +283,79 @@ export const FAQS = [
     a: "We are conveniently located at Shop No. 1, Gokul Tower, Near SBI Bank, Kardhani, Kalwar Road, Jaipur (Rajasthan). Call us directly at 9166857779 for directions or to book a visit.",
   },
 ];
+
+export const CLINIC_GALLERY = [
+  {
+    id: "operatory-chair",
+    title: "Ergonomic Treatment Suite",
+    category: "Operatory",
+    tag: "Painless Suite",
+    src: "/images/clinic-operatory-chair.png",
+    originalSrc: "/images/image.png",
+    alt: "Dental House Treatment Suite with Ergonomic Dental Chair",
+    description: "Equipped with motorized zero-strain dental chair, LED surgical lighting, and sterile instrument console for gentle, fear-free procedures.",
+    badge: "Operatory Suite",
+    features: ["Memory-foam patient cushioning", "High-lux overhead shadowless LED", "Sealed sterile instrument tray"]
+  },
+  {
+    id: "consultation-suite",
+    title: "Doctor's Consultation & Dental Suite",
+    category: "Operatory",
+    tag: "Doctor Suite",
+    src: "/images/clinic-consultation-suite.png",
+    originalSrc: "/images/image copy 4.png",
+    alt: "Dr. Priyanka Katewa Consultation Desk and Treatment Suite",
+    description: "Dr. Priyanka Katewa's dedicated consultation desk overlooking the treatment suite, fully air-conditioned and designed for private smile planning.",
+    badge: "Consultation Bay",
+    features: ["Private case consultation desk", "Full climate control & AC", "Sterile hygiene cabinetry & wash station"]
+  },
+  {
+    id: "waiting-lounge",
+    title: "Air-Conditioned Waiting Lounge",
+    category: "Lounge",
+    tag: "Patient Comfort",
+    src: "/images/clinic-waiting-lounge.png",
+    originalSrc: "/images/image copy 3.png",
+    alt: "Dental House Patient Waiting Lounge and Sofa Seating",
+    description: "Peaceful waiting lounge with plush sofas, calming emerald accents, and a soothing ambiance designed to eliminate dental anxiety.",
+    badge: "Waiting Lounge",
+    features: ["Plush cushioned family sofa", "Calming aesthetic greenery", "Stress-free serene ambiance"]
+  },
+  {
+    id: "waiting-entrance",
+    title: "Glass-Front Entrance & Waiting Bay",
+    category: "Lounge",
+    tag: "Ground Floor Access",
+    src: "/images/clinic-entrance-lounge.png",
+    originalSrc: "/images/image copy 5.png",
+    alt: "Dental House Ground Floor Entrance and Waiting Area",
+    description: "Bright street-level glass entrance facing Gokul Tower, Kalwar Road with easy ground-floor accessibility and tranquil lounge seating.",
+    badge: "Clinic Entrance",
+    features: ["Natural daylight & glass frontage", "Ground-floor elder & wheelchair friendly", "Direct Gokul Tower street view"]
+  },
+  {
+    id: "reception-desk",
+    title: "Reception & Check-in Desk",
+    category: "Reception",
+    tag: "Warm Welcome",
+    src: "/images/clinic-reception-desk.png",
+    originalSrc: "/images/image copy.png",
+    alt: "Dental House Reception Desk and Front Office",
+    description: "Calming mint-green reception ambiance with fresh indoor greenery and warm reception desk for seamless check-in and consultations.",
+    badge: "Reception Desk",
+    features: ["Quick appointment check-in", "Friendly staff support", "Clean mint-green aesthetic"]
+  },
+  {
+    id: "reception-counter",
+    title: "Front Desk & Refreshments",
+    category: "Reception",
+    tag: "Hospitality",
+    src: "/images/clinic-reception-counter.png",
+    originalSrc: "/images/image copy 2.png",
+    alt: "Dental House Reception Counter and Amenities",
+    description: "Executive front counter featuring awards, credentials, and purified water dispenser for patient hydration and refreshments.",
+    badge: "Front Desk",
+    features: ["Cold & hot purified drinking water", "Doctor credentials on display", "Clean and sanitized facility"]
+  },
+];
+
