@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Calendar, Clock, Phone, User, CheckCircle2, MessageCircle, Sparkles, MapPin, ShieldCheck } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { CLINIC_INFO } from '../data/dentalData';
 
-export default function BookingModal({ isOpen, onClose, defaultService = 'Smile Design Treatment (Smile Makeover)' }) {
+export default function BookingModal({ isOpen, onClose, defaultService = 'Smile Design' }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -15,16 +15,25 @@ export default function BookingModal({ isOpen, onClose, defaultService = 'Smile 
 
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    if (defaultService) {
+      setFormData((prev) => ({ ...prev, service: defaultService }));
+    }
+  }, [defaultService, isOpen]);
+
   if (!isOpen) return null;
 
   const servicesList = [
-    'Smile Design Treatment (Smile Makeover)',
-    'Porcelain & E-Max Veneers',
-    'Laser Teeth Whitening (Zoom)',
+    'Smile Design',
+    'Dental Implant',
+    'Root Canal Treatment',
+    'Crown, Bridge & Veneers',
+    'Full Mouth Rehabilitation',
+    'Ultra Sonic Scaling',
+    'Tooth Extraction',
+    'Complete Denture',
     'Invisible Clear Aligners',
-    'Single-Visit Dental Implants',
-    'Painless Root Canal (RCT)',
-    'Gentle Kids Dentistry',
+    'Gentle Kids & Pediatric Dentistry',
     'General Dental Checkup & Consultation',
   ];
 

@@ -77,7 +77,7 @@ export default function SmileQuizModal({ isOpen, onClose, onOpenBooking }) {
     if (selectedConcerns.includes('gap') || selectedConcerns.includes('chipped') || selectedConcerns.includes('crooked')) {
       treatments.push('Ultra-Thin E-Max Porcelain Veneers');
     }
-    if (selectedConcerns.includes('stains')) treatments.push('Laser Whitening & Enamel Glaze');
+    if (selectedConcerns.includes('stains')) treatments.push('Ultra Sonic Scaling & Stain Removal');
     return treatments;
   };
 

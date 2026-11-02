@@ -387,10 +387,10 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                 <span>World-Class Clinical Care</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-outfit font-black text-slate-900">
-                Comprehensive Dental Treatments
+                Dental Facilities & Treatments
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                From emergency pain relief to Hollywood aesthetic smile redesigns
+                From signature Smile Design to German implants, rotary root canals & ultrasonic scaling
               </p>
             </div>
 
@@ -398,13 +398,13 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
               onClick={() => setActivePage('services')}
               className="px-5 py-2.5 rounded-xl bg-white border border-slate-300 hover:border-cyan-500 text-cyan-800 font-bold text-xs uppercase tracking-wider flex items-center space-x-1.5 self-start md:self-auto transition-colors shadow-sm"
             >
-              <span>View All Services</span>
+              <span>View All Facilities</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {SERVICES_LIST.slice(0, 6).map((srv) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {SERVICES_LIST.slice(0, 8).map((srv) => (
               <div
                 key={srv.id}
                 className={`p-6 sm:p-7 rounded-3xl border transition-all duration-300 relative flex flex-col justify-between ${
@@ -453,7 +453,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                       if (srv.id === 'smile-design') {
                         setActivePage('smile-design');
                       } else {
-                        onOpenBooking();
+                        onOpenBooking(srv.title);
                       }
                     }}
                     className="text-xs font-bold text-cyan-700 hover:text-cyan-900 flex items-center space-x-1"
@@ -463,7 +463,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                   </button>
 
                   <button
-                    onClick={onOpenBooking}
+                    onClick={() => onOpenBooking(srv.title)}
                     className="p-2 rounded-xl bg-slate-100 hover:bg-cyan-600 text-slate-600 hover:text-white transition-colors"
                   >
                     <Calendar className="w-3.5 h-3.5" />

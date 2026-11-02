@@ -17,7 +17,7 @@ import { SERVICES_LIST, CLINIC_INFO } from '../data/dentalData';
 export default function ServicesPage({ setActivePage, onOpenBooking }) {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', 'Cosmetic Dentistry', 'Orthodontics', 'Restorative Dentistry', 'Preventive Care'];
+  const categories = ['All', 'Cosmetic Dentistry', 'Restorative Dentistry', 'Preventive Care', 'Oral Surgery', 'Orthodontics'];
 
   const filteredServices = activeCategory === 'All' 
     ? SERVICES_LIST 
@@ -34,10 +34,10 @@ export default function ServicesPage({ setActivePage, onOpenBooking }) {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-outfit font-black text-slate-900 tracking-tight">
-            Specialized Dental Treatments
+            Dental Facilities & Treatments
           </h1>
           <p className="text-base text-slate-600 max-w-2xl mx-auto mt-3 leading-relaxed">
-            From our signature <strong>Smile Design Makeovers</strong> to gentle painless root canals and German implants, every treatment is personally administered by <strong>Dr. Priyanka Katewa</strong> (B.D.S.).
+            From our signature <strong>Smile Design</strong> to German implants, rotary root canals, ultrasonic scaling, and full mouth rehabilitation — each treatment is personally administered by <strong>Dr. Priyanka Katewa</strong> (B.D.S.).
           </p>
 
           {/* Category Filter Pills */}
@@ -131,7 +131,7 @@ export default function ServicesPage({ setActivePage, onOpenBooking }) {
                   </button>
                 ) : (
                   <button
-                    onClick={onOpenBooking}
+                    onClick={() => onOpenBooking(srv.title)}
                     className="flex-1 py-2.5 px-3 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-1.5 shadow-md shadow-cyan-600/20"
                   >
                     <Calendar className="w-3.5 h-3.5" />

@@ -18,13 +18,21 @@ export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isQuizOpen, setIsQuizOpen] = useState(false);
   const [isSimulatorOpen, setIsSimulatorOpen] = useState(false);
+  const [bookingService, setBookingService] = useState('Smile Design');
+
+  const handleOpenBooking = (serviceName) => {
+    if (serviceName && typeof serviceName === 'string') {
+      setBookingService(serviceName);
+    }
+    setIsBookingOpen(true);
+  };
 
   const renderCurrentPage = () => {
     switch (activePage) {
       case 'smile-design':
         return (
           <SmileDesignPage 
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={() => handleOpenBooking('Smile Design')}
             onOpenQuiz={() => setIsQuizOpen(true)}
             onOpenSimulator={() => setIsSimulatorOpen(true)}
           />
@@ -33,25 +41,25 @@ export default function App() {
         return (
           <ServicesPage 
             setActivePage={setActivePage}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={handleOpenBooking}
           />
         );
       case 'about':
         return (
           <AboutPage 
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={() => handleOpenBooking('General Dental Consultation')}
           />
         );
       case 'contact':
         return (
-          <ContactPage onOpenBooking={() => setIsBookingOpen(true)} />
+          <ContactPage onOpenBooking={() => handleOpenBooking('General Dental Consultation')} />
         );
       case 'home':
       default:
         return (
           <HomePage 
             setActivePage={setActivePage}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={handleOpenBooking}
             onOpenQuiz={() => setIsQuizOpen(true)}
             onOpenSimulator={() => setIsSimulatorOpen(true)}
           />
@@ -68,7 +76,7 @@ export default function App() {
       <Navbar 
         activePage={activePage}
         setActivePage={setActivePage}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={() => handleOpenBooking('Smile Design')}
         onOpenQuiz={() => setIsQuizOpen(true)}
       />
 
@@ -80,31 +88,32 @@ export default function App() {
       {/* Rich Branded Footer */}
       <Footer 
         setActivePage={setActivePage}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={() => handleOpenBooking('Smile Design')}
       />
 
       {/* Quick Action Floating Controls */}
       <FloatingContact 
         onOpenQuiz={() => setIsQuizOpen(true)}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={() => handleOpenBooking('Smile Design')}
       />
 
       {/* Interactive Modals */}
       <BookingModal 
         isOpen={isBookingOpen}
+        defaultService={bookingService}
         onClose={() => setIsBookingOpen(false)}
       />
 
       <SmileQuizModal 
         isOpen={isQuizOpen}
         onClose={() => setIsQuizOpen(false)}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={() => handleOpenBooking('Smile Design')}
       />
 
       <SmileSimulatorModal 
         isOpen={isSimulatorOpen}
         onClose={() => setIsSimulatorOpen(false)}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={() => handleOpenBooking('Smile Design')}
       />
     </div>
   );

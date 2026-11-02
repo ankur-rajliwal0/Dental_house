@@ -21,7 +21,7 @@ export default function ContactPage({ onOpenBooking }) {
     name: '',
     phone: '',
     email: '',
-    service: 'Smile Design Makeover Consultation',
+    service: 'Smile Design',
     preferredDate: '',
     message: '',
   });
@@ -266,12 +266,15 @@ export default function ContactPage({ onOpenBooking }) {
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-cyan-500 focus:bg-white"
                     >
-                      <option>Smile Design Treatment (Smile Makeover)</option>
-                      <option>Porcelain & E-Max Veneers</option>
-                      <option>Laser Teeth Whitening</option>
+                      <option>Smile Design</option>
+                      <option>Dental Implant</option>
+                      <option>Root Canal Treatment</option>
+                      <option>Crown, Bridge & Veneers</option>
+                      <option>Full Mouth Rehabilitation</option>
+                      <option>Ultra Sonic Scaling</option>
+                      <option>Tooth Extraction</option>
+                      <option>Complete Denture</option>
                       <option>Invisible Clear Aligners</option>
-                      <option>Dental Implants & Zirconia Crowns</option>
-                      <option>Painless Root Canal (RCT)</option>
                       <option>General Dental Consultation</option>
                     </select>
                   </div>
