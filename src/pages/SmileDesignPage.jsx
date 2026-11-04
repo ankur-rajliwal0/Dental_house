@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { CLINIC_INFO, SMILE_DESIGN_DETAILS } from '../data/dentalData';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
+import TransformationsSection from '../components/TransformationsSection';
 
 export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimulator }) {
   const [selectedStyle, setSelectedStyle] = useState('hollywood');
@@ -133,26 +134,11 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
         </div>
       </section>
 
-      {/* ================= INTERACTIVE BEFORE / AFTER SLIDER ================= */}
-      <section className="relative py-16 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-cyan-700">
-              Interactive Clinical Transformation
-            </span>
-            <h2 className="text-3xl font-outfit font-black text-slate-900">
-              Slide to Witness The Magic
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600">
-              Drag the center slider to inspect how Dr. Priyanka eliminated discoloration and gaps, restoring perfect symmetry.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <BeforeAfterSlider onConsultClick={onOpenBooking} />
-          </div>
-        </div>
-      </section>
+      {/* ================= REAL CLINICAL TRANSFORMATIONS SECTION ================= */}
+      <TransformationsSection 
+        onOpenBooking={onOpenBooking} 
+        initialCategory="Smile Makeover" 
+      />
 
       {/* ================= SMILE STYLES EXPLORER ================= */}
       <section className="relative py-20">

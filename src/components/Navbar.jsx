@@ -34,12 +34,25 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking, onOpe
       badge: 'Featured',
       highlight: true 
     },
+    { id: 'transformations', label: 'Transformations' },
     { id: 'services', label: 'Treatments' },
     { id: 'about', label: 'Dr. Priyanka' },
     { id: 'contact', label: 'Clinic & Hours' },
   ];
 
   const handleNavClick = (pageId) => {
+    if (pageId === 'transformations') {
+      if (activePage !== 'home') {
+        setActivePage('home');
+        setTimeout(() => {
+          document.getElementById('transformations')?.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      } else {
+        document.getElementById('transformations')?.scrollIntoView({ behavior: 'smooth' });
+      }
+      setMobileMenuOpen(false);
+      return;
+    }
     setActivePage(pageId);
     setMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });

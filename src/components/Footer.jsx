@@ -17,12 +17,20 @@ export default function Footer({ setActivePage, onOpenBooking }) {
   const quickLinks = [
     { id: 'home', label: 'Home' },
     { id: 'smile-design', label: 'Smile Design (Makeover)' },
+    { id: 'transformations', label: 'Patient Transformations' },
     { id: 'services', label: 'All Dental Treatments' },
     { id: 'about', label: 'About Dr. Priyanka Katewa' },
     { id: 'contact', label: 'Clinic Location & Hours' },
   ];
 
   const handleLink = (id) => {
+    if (id === 'transformations') {
+      setActivePage('home');
+      setTimeout(() => {
+        document.getElementById('transformations')?.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+      return;
+    }
     setActivePage(id);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

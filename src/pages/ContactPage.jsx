@@ -267,6 +267,7 @@ export default function ContactPage({ onOpenBooking }) {
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-cyan-500 focus:bg-white"
                     >
                       <option>Smile Design</option>
+                      <option>Teeth Whitening</option>
                       <option>Dental Implant</option>
                       <option>Root Canal Treatment</option>
                       <option>Crown, Bridge & Veneers</option>

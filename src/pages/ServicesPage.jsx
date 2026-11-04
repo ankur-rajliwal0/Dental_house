@@ -37,7 +37,7 @@ export default function ServicesPage({ setActivePage, onOpenBooking }) {
             Dental Facilities & Treatments
           </h1>
           <p className="text-base text-slate-600 max-w-2xl mx-auto mt-3 leading-relaxed">
-            From our signature <strong>Smile Design</strong> to German implants, rotary root canals, ultrasonic scaling, and full mouth rehabilitation — each treatment is personally administered by <strong>Dr. Priyanka Katewa</strong> (B.D.S.).
+            From our signature <strong>Smile Design</strong> and professional <strong>Teeth Whitening</strong> to German implants, rotary root canals, ultrasonic scaling, and full mouth rehabilitation — each treatment is personally administered by <strong>Dr. Priyanka Katewa</strong> (B.D.S.).
           </p>
 
           {/* Category Filter Pills */}

@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { CLINIC_INFO, SMILE_DESIGN_DETAILS, SERVICES_LIST, TESTIMONIALS, FAQS } from '../data/dentalData';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
+import TransformationsSection from '../components/TransformationsSection';
 import ClinicTourGallery from '../components/ClinicTourGallery';
 
 export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onOpenSimulator }) {
@@ -193,11 +194,11 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
       </section>
 
       {/* ================= SIGNATURE SMILE DESIGN SHOWCASE ================= */}
-      <section className="relative py-20 lg:py-28">
+      <section className="relative py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
+          <div className="text-center max-w-3xl mx-auto space-y-3 mb-10">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-50 border border-cyan-300 text-cyan-800 text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-4 h-4 text-cyan-600" />
               <span>Signature Specialty Service</span>
@@ -206,17 +207,12 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
               Smile Design Treatment (Smile Makeover)
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Every smile is uniquely crafted by Dr. Priyanka Katewa to match your facial symmetry, lip curvature, and complexion. Experience our interactive before-and-after slider below.
+              Every smile is uniquely crafted by Dr. Priyanka Katewa to harmonize with your facial symmetry, lip curvature, and skin complexion.
             </p>
           </div>
 
-          {/* Interactive Before & After Slider Box */}
-          <div className="max-w-4xl mx-auto">
-            <BeforeAfterSlider onConsultClick={onOpenBooking} />
-          </div>
-
           {/* Interactive Simulator Button Banner */}
-          <div className="mt-10 p-6 rounded-2xl bg-gradient-to-r from-cyan-50 via-sky-50 to-indigo-50 border border-cyan-200 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto shadow-sm">
+          <div className="p-6 rounded-2xl bg-gradient-to-r from-cyan-50 via-sky-50 to-indigo-50 border border-cyan-200 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto shadow-sm mb-16">
             <div className="flex items-center space-x-3 text-left">
               <div className="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center shrink-0">
                 <Smile className="w-6 h-6" />
@@ -237,8 +233,8 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
           </div>
 
           {/* DSD 5-Step Journey Cards */}
-          <div className="mt-20">
-            <div className="text-center mb-12">
+          <div>
+            <div className="text-center mb-10">
               <h3 className="text-2xl sm:text-3xl font-outfit font-bold text-slate-900">
                 How We Design Your Perfect Smile
               </h3>
@@ -282,6 +278,12 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
 
         </div>
       </section>
+
+      {/* ================= REAL PATIENT TRANSFORMATIONS SECTION ================= */}
+      <TransformationsSection 
+        onOpenBooking={onOpenBooking} 
+        setActivePage={setActivePage} 
+      />
 
       {/* ================= MEET DR. PRIYANKA KATEWA SECTION ================= */}
       <section className="relative py-20 bg-slate-50 border-y border-slate-200">
@@ -390,7 +392,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                 Dental Facilities & Treatments
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                From signature Smile Design to German implants, rotary root canals & ultrasonic scaling
+                From signature Smile Design & Teeth Whitening to German implants, rotary root canals & ultrasonic scaling
               </p>
             </div>
 
@@ -403,8 +405,8 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {SERVICES_LIST.slice(0, 8).map((srv) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SERVICES_LIST.slice(0, 9).map((srv) => (
               <div
                 key={srv.id}
                 className={`p-6 sm:p-7 rounded-3xl border transition-all duration-300 relative flex flex-col justify-between ${

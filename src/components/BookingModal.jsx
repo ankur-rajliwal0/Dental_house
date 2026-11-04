@@ -25,6 +25,7 @@ export default function BookingModal({ isOpen, onClose, defaultService = 'Smile 
 
   const servicesList = [
     'Smile Design',
+    'Teeth Whitening',
     'Dental Implant',
     'Root Canal Treatment',
     'Crown, Bridge & Veneers',
