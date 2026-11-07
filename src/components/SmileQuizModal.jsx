@@ -324,8 +324,8 @@ export default function SmileQuizModal({ isOpen, onClose, onOpenBooking }) {
                     <span className="text-sm font-bold text-slate-900">2 - 3 Sessions</span>
                   </div>
                   <div className="p-2.5 rounded-xl bg-white border border-slate-200">
-                    <span className="text-[10px] text-slate-500 block">Pain Level</span>
-                    <span className="text-sm font-bold text-emerald-600">0/10 Painless</span>
+                    <span className="text-[10px] text-slate-500 block">Comfort</span>
+                    <span className="text-sm font-bold text-emerald-600">Gentle Care</span>
                   </div>
                   <div className="p-2.5 rounded-xl bg-white border border-slate-200">
                     <span className="text-[10px] text-slate-500 block">Veneer Life</span>
@@ -354,7 +354,7 @@ export default function SmileQuizModal({ isOpen, onClose, onOpenBooking }) {
                   className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-600 to-indigo-600 hover:opacity-95 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 shadow-md shadow-cyan-600/25 transition-all"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Book Free 3D Preview</span>
+                  <span>Book 3D Smile Preview</span>
                 </button>
               </div>
 

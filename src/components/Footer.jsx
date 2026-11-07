@@ -47,13 +47,13 @@ export default function Footer({ setActivePage, onOpenBooking }) {
           <div className="space-y-2 text-center md:text-left">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-100/80 text-cyan-800 text-xs font-bold border border-cyan-300">
               <Sparkles className="w-3.5 h-3.5 text-cyan-600" />
-              <span>Complimentary 3D Smile Makeover Consultation</span>
+              <span>Personalized 3D Smile Makeover Consultation</span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-outfit font-black text-slate-900">
               Ready to Design Your Dream Hollywood Smile?
             </h3>
             <p className="text-sm text-slate-600 max-w-xl">
-              Book a personal appointment with <strong>Dr. Priyanka Katewa</strong> at Dental House, Gokul Tower, Jaipur. Experience painless, aesthetic dental perfection.
+              Book a personal appointment with <strong>Dr. Priyanka Katewa</strong> at Dental House, Gokul Tower, Jaipur. Experience comfortable, aesthetic dental care.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function Footer({ setActivePage, onOpenBooking }) {
             </div>
 
             <p className="text-xs text-slate-600 leading-relaxed">
-              Founded & led by <strong>Dr. Priyanka Katewa</strong>, B.D.S. (Mahatma Gandhi College). Specializing in high-end Digital Smile Design, aesthetic ceramic veneers, and painless dental surgery in Jaipur.
+              Founded & led by <strong>Dr. Priyanka Katewa</strong>, B.D.S. (Mahatma Gandhi College). Specializing in high-end Digital Smile Design, aesthetic ceramic veneers, and gentle restorative dental care in Jaipur.
             </p>
 
             <div className="pt-1 flex items-center space-x-2 text-xs text-cyan-800 font-semibold">

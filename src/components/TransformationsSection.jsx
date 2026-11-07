@@ -127,7 +127,7 @@ export default function TransformationsSection({ onOpenBooking, setActivePage, i
           </h2>
 
           <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto px-2">
-            100% genuine clinical before-and-after results performed personally by{' '}
+            Documented clinical before-and-after cases performed personally by{' '}
             <strong className="text-slate-900 font-bold">Dr. Priyanka Katewa</strong> (B.D.S.) at Dental House, Jaipur.
           </p>
 
@@ -143,7 +143,7 @@ export default function TransformationsSection({ onOpenBooking, setActivePage, i
             </span>
             <span className="flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200 shadow-xs shrink-0">
               <Sparkles className="w-3 h-3 text-amber-500" />
-              <span>Painless Modern Care</span>
+              <span>Gentle Modern Care</span>
             </span>
           </div>
         </div>

@@ -26,9 +26,9 @@ export default function AboutPage({ onOpenBooking }) {
   const clinicHighlights = [
     "Ultra-hygienic facility located at Shop No. 1, Gokul Tower, Kalwar Road",
     "Individual sterilized instrument pouches opened exclusively in front of each patient",
-    "Painless local anesthesia delivery and fear-free clinical atmosphere",
+    "Gentle local anesthesia delivery and reassuring clinical atmosphere",
     "Pre-treatment 3D digital smile simulation before any procedure begins",
-    "Dedicated post-treatment follow-up and lifetime oral care guidance",
+    "Dedicated post-treatment follow-up and comprehensive oral care guidance",
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function AboutPage({ onOpenBooking }) {
             About Dr. Priyanka Katewa & Dental House
           </h1>
           <p className="text-base text-slate-600 max-w-2xl mx-auto mt-3 leading-relaxed">
-            Combining medical precision, artistic finesse, and empathetic care to deliver painless, life-changing dental aesthetics in Jaipur.
+            Combining medical precision, artistic finesse, and empathetic care to deliver gentle, life-changing dental aesthetics in Jaipur.
           </p>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function AboutPage({ onOpenBooking }) {
                 "Every patient deserves a smile they never have to hide."
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Dr. Priyanka Katewa completed her Bachelor of Dental Surgery (B.D.S.) at the prestigious <strong>Mahatma Gandhi Dental College & Hospital</strong>. Driven by a deep passion for aesthetic harmony and restorative medicine, she established <strong>Dental House</strong> at Gokul Tower, Kalwar Road, Jaipur, to deliver world-class dental care in a soothing, fear-free environment.
+                Dr. Priyanka Katewa completed her Bachelor of Dental Surgery (B.D.S.) at the prestigious <strong>Mahatma Gandhi Dental College & Hospital</strong>. Driven by a deep passion for aesthetic harmony and restorative medicine, she established <strong>Dental House</strong> at Gokul Tower, Kalwar Road, Jaipur, to deliver world-class dental care in a soothing, reassuring environment.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Over the past 10+ years, Dr. Priyanka has helped over 2,400+ patients in Jaipur regain their biting comfort and social confidence. She is particularly celebrated for her work in <strong>Digital Smile Design (Smile Makeovers)</strong>, where she custom crafts porcelain veneers with lifelike light refraction that perfectly complements each patient's facial contour and skin tone.

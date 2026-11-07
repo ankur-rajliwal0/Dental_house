@@ -28,7 +28,7 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
     {
       feature: "Outcome Predictability",
       traditional: "Vague imagination, you only see final result after it's bonded permanently.",
-      dsd: "100% Predictable: You test-drive a real physical mockup in your mouth before starting.",
+      dsd: "Fully Predictable: You test-drive a real physical mockup in your mouth before starting.",
     },
     {
       feature: "Impression Technique",
@@ -48,7 +48,7 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
     {
       feature: "Material Quality",
       traditional: "Standard ceramic or composite that stains within 2–4 years.",
-      dsd: "German/Swiss E-Max Lithium Disilicate (15–20+ year stain-proof guarantee).",
+      dsd: "German/Swiss E-Max Lithium Disilicate (High-durability stain-resistant ceramic with 15–20+ year clinical longevity).",
     },
   ];
 
@@ -123,7 +123,7 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
 
               <div className="shrink-0 flex items-center space-x-2">
                 <span className="px-3 py-1.5 rounded-xl bg-cyan-100 border border-cyan-200 text-cyan-800 text-xs font-bold">
-                  100% Painless
+                  Gentle & Comfortable
                 </span>
                 <span className="px-3 py-1.5 rounded-xl bg-emerald-100 border border-emerald-200 text-emerald-800 text-xs font-bold">
                   2 Clinic Visits
@@ -317,7 +317,7 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
                 </span>
                 <span className="flex items-center space-x-1.5">
                   <Check className="w-3.5 h-3.5 text-cyan-600" />
-                  <span>100% Painless Tech</span>
+                  <span>Gentle Anesthesia Tech</span>
                 </span>
                 <span className="flex items-center space-x-1.5">
                   <Check className="w-3.5 h-3.5 text-cyan-600" />
@@ -325,7 +325,7 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
                 </span>
                 <span className="flex items-center space-x-1.5">
                   <Check className="w-3.5 h-3.5 text-cyan-600" />
-                  <span>15+ Year Guarantee</span>
+                  <span>15+ Year Clinical Durability</span>
                 </span>
               </div>
             </div>

@@ -57,7 +57,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                 <span className="text-cyan-700 font-semibold underline decoration-cyan-400 decoration-2 underline-offset-4">
                   Smile Design Treatment (Smile Makeover)
                 </span>
-                . We merge cosmetic dental facial aesthetics with ultra-thin porcelain veneers and 100% painless care.
+                . We merge cosmetic dental facial aesthetics with ultra-thin porcelain veneers and gentle, comfort-focused care.
               </p>
 
               {/* Call to Actions */}
@@ -101,9 +101,9 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                 <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-sm">
                   <div className="flex items-center space-x-1 text-emerald-600 text-xs font-bold">
                     <ShieldCheck className="w-3.5 h-3.5" />
-                    <span>100% Painless</span>
+                    <span>Gentle Comfort</span>
                   </div>
-                  <p className="text-[11px] text-slate-500 mt-0.5">Gentle Local Anesthesia</p>
+                  <p className="text-[11px] text-slate-500 mt-0.5">Anesthetic Comfort Protocols</p>
                 </div>
               </div>
             </div>
@@ -475,7 +475,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
             onOpenBooking={onOpenBooking}
             setActivePage={setActivePage}
             title="Step Inside Dental House, Gokul Tower"
-            subtitle="Explore our real operatory suite, sterilization bay, comfortable waiting lounge, and reception desk. Designed for painless treatments and zero anxiety."
+            subtitle="Explore our real operatory suite, sterilization bay, comfortable waiting lounge, and reception desk. Designed for comfortable treatments and anxiety-free care."
           />
         </div>
       </section>
@@ -540,7 +540,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
               Frequently Asked Questions
             </h2>
             <p className="text-xs text-slate-500">
-              Clear answers about Smile Design Treatment, costs, duration, and painless techniques
+              Clear answers about Smile Design Treatment, costs, duration, and gentle comfort techniques
             </p>
           </div>
 

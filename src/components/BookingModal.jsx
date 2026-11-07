@@ -264,7 +264,7 @@ export default function BookingModal({ isOpen, onClose, defaultService = 'Smile 
 
               <div className="text-center text-[11px] text-slate-500 flex items-center justify-center space-x-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-cyan-600" />
-                <span>Zero wait time with prior booking • 100% sterile clinic</span>
+                <span>Zero wait time with prior booking • Class-B Autoclaved Sterilization</span>
               </div>
             </form>
           )}
