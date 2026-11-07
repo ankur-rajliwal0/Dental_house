@@ -244,7 +244,7 @@ export default function ClinicTourGallery({ onOpenBooking, setActivePage, title,
             </div>
 
             {/* Thumbnail Strip with Active Progress Bar */}
-            <div className="grid grid-cols-6 gap-2 sm:gap-3 mt-4">
+            <div className="grid grid-cols-4 sm:grid-cols-7 gap-2 sm:gap-2.5 mt-4">
               {filteredImages.map((img, idx) => {
                 const isSelected = idx === selectedIndex;
                 return (

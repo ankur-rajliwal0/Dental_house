@@ -78,12 +78,14 @@ export default function TransformationsSection({ onOpenBooking, setActivePage, i
     setIsDragging(false);
   };
 
-  // Scroll active thumbnail into view smoothly
+  // Scroll active thumbnail horizontally only inside its container, never scrolling the page window
   useEffect(() => {
     if (thumbnailsRef.current) {
       const activeEl = thumbnailsRef.current.children[selectedIndex];
       if (activeEl) {
-        activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        const container = thumbnailsRef.current;
+        const targetScrollLeft = activeEl.offsetLeft - (container.clientWidth / 2) + (activeEl.clientWidth / 2);
+        container.scrollTo({ left: targetScrollLeft, behavior: 'smooth' });
       }
     }
   }, [selectedIndex]);

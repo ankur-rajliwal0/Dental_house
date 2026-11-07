@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { 
-  Sparkles, 
-  ArrowRight, 
-  ShieldCheck, 
-  Star, 
-  Clock, 
-  Phone, 
-  CheckCircle2, 
-  Calendar, 
-  Award, 
-  MapPin, 
-  Layers, 
-  Eye, 
+import {
+  Sparkles,
+  ArrowRight,
+  ShieldCheck,
+  Star,
+  Clock,
+  Phone,
+  CheckCircle2,
+  Calendar,
+  Award,
+  MapPin,
+  Layers,
+  Eye,
   Heart,
   ChevronDown,
   ChevronUp,
@@ -33,7 +33,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               {/* Doctor & Location pill */}
@@ -196,7 +196,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
       {/* ================= SIGNATURE SMILE DESIGN SHOWCASE ================= */}
       <section className="relative py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          
+
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-10">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-50 border border-cyan-300 text-cyan-800 text-xs font-bold uppercase tracking-wider">
@@ -280,16 +280,16 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
       </section>
 
       {/* ================= REAL PATIENT TRANSFORMATIONS SECTION ================= */}
-      <TransformationsSection 
-        onOpenBooking={onOpenBooking} 
-        setActivePage={setActivePage} 
+      <TransformationsSection
+        onOpenBooking={onOpenBooking}
+        setActivePage={setActivePage}
       />
 
       {/* ================= MEET DR. PRIYANKA KATEWA SECTION ================= */}
       <section className="relative py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left Doctor Portrait */}
             <div className="lg:col-span-5 relative">
               <div className="relative mx-auto max-w-sm rounded-3xl overflow-hidden border border-slate-200 shadow-2xl bg-white">
@@ -323,20 +323,12 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                 Graduated from the prestigious <strong>Mahatma Gandhi Dental College & Hospital</strong>, Dr. Priyanka Katewa has dedicated over a decade to mastering the delicate intersection of facial aesthetics and conservative restorative dentistry.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                 <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start space-x-3">
                   <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
                   <div className="text-xs">
                     <p className="font-bold text-slate-900">B.D.S. Accredited Surgeon</p>
                     <p className="text-slate-500">Trained under international dental mentors</p>
-                  </div>
-                </div>
-
-                <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start space-x-3">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <div className="text-xs">
-                    <p className="font-bold text-slate-900">100% Painless Guarantee</p>
-                    <p className="text-slate-500">Painless rotary endodontics & gentle anesthesia</p>
                   </div>
                 </div>
 
@@ -409,11 +401,10 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
             {SERVICES_LIST.slice(0, 9).map((srv) => (
               <div
                 key={srv.id}
-                className={`p-6 sm:p-7 rounded-3xl border transition-all duration-300 relative flex flex-col justify-between ${
-                  srv.featured
+                className={`p-6 sm:p-7 rounded-3xl border transition-all duration-300 relative flex flex-col justify-between ${srv.featured
                     ? 'bg-gradient-to-b from-cyan-50/60 via-white to-white border-cyan-300 shadow-xl shadow-cyan-100'
                     : 'bg-white border-slate-200 hover:border-slate-300 shadow-sm'
-                }`}
+                  }`}
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
@@ -480,7 +471,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
       {/* ================= CLINIC VIRTUAL TOUR & GALLERY ================= */}
       <section className="relative py-20 bg-slate-50/80 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <ClinicTourGallery 
+          <ClinicTourGallery
             onOpenBooking={onOpenBooking}
             setActivePage={setActivePage}
             title="Step Inside Dental House, Gokul Tower"

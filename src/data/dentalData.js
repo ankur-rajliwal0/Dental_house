@@ -334,6 +334,42 @@ export const FAQS = [
 
 export const CLINIC_GALLERY = [
   {
+    id: "clinic-operatory-room",
+    title: "Treatment Operatory & Dental Suite",
+    category: "Operatory",
+    tag: "Real Clinic View",
+    src: "/images/clinic-operatory-suite.jpg",
+    originalSrc: "/images/clinic-operatory-suite.jpg",
+    alt: "Dental House Operatory Suite with Dental Chair, Consultation Desk and Attendant Lounge",
+    description: "Air-conditioned modern operatory room at Dental House with ergonomic motorized dental chair, in-suite doctor consultation desk, and comfortable attendant sofa seating.",
+    badge: "Operatory Suite",
+    features: ["Motorized ergonomic dental chair", "In-clinic private consultation desk", "Comfortable patient & family seating"]
+  },
+  {
+    id: "clinic-consultation-chamber",
+    title: "Doctor's Consultation Desk & Degrees",
+    category: "Operatory",
+    tag: "Doctor Credentials",
+    src: "/images/clinic-doctor-consultation.jpg",
+    originalSrc: "/images/clinic-doctor-consultation.jpg",
+    alt: "Dr. Priyanka Katewa Private Consultation Desk with Medical Degrees",
+    description: "Dr. Priyanka Katewa's private consultation chamber featuring certified BDS medical degrees from Mahatma Gandhi College, executive ergonomic chair, and smile planning desk.",
+    badge: "Doctor Suite",
+    features: ["Certified BDS medical degrees on display", "One-on-one smile discussion desk", "Private & stress-free atmosphere"]
+  },
+  {
+    id: "clinic-reception-main",
+    title: "Main Reception & Welcome Desk",
+    category: "Reception",
+    tag: "Welcome Area",
+    src: "/images/clinic-reception-entrance.jpg",
+    originalSrc: "/images/clinic-reception-entrance.jpg",
+    alt: "Dental House Main Reception Desk with Dr. Priyanka Katewa Signboard",
+    description: "Mint-green clinic entrance and reception counter with Dr. Priyanka Katewa signboard, Ganesha blessings, and patient check-in at Shop No. 1, Gokul Tower, Jaipur.",
+    badge: "Reception Desk",
+    features: ["Dr. Priyanka Katewa sign & info desk", "Quick appointment check-in", "Clean mint-green serene aesthetic"]
+  },
+  {
     id: "operatory-chair",
     title: "Ergonomic Treatment Suite",
     category: "Operatory",

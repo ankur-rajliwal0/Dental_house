@@ -177,7 +177,7 @@ export default function AboutPage({ onOpenBooking }) {
           <div className="pt-8 border-t border-slate-200">
             <ClinicTourGallery 
               onOpenBooking={onOpenBooking}
-              title="Virtual Tour of Our 6 Clinical Spaces"
+              title="Virtual Tour of Dental House Clinic"
               subtitle="Browse through real photographs of our treatment operatory, patient lounge, and front office."
             />
           </div>
