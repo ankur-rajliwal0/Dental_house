@@ -60,7 +60,7 @@ export default function AboutPage({ onOpenBooking }) {
               <img
                 src="/images/dr-priyanka.jpg"
                 alt="Dr. Priyanka Katewa B.D.S. Mahatma Gandhi College"
-                className="w-full h-auto object-cover aspect-[4/5]"
+                className="w-full h-auto object-cover aspect-square"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
 

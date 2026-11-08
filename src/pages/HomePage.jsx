@@ -139,7 +139,8 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                       <img
                         src="/images/dr-priyanka.jpg"
                         alt="Dr. Priyanka Katewa"
-                        className="w-11 h-11 rounded-full object-cover object-top border-2 border-cyan-500 shadow-sm"
+                        className="w-11 h-11 rounded-full object-cover border-2 border-cyan-500 shadow-sm"
+                        style={{ objectPosition: '62% 22%' }}
                       />
                       <div>
                         <p className="text-xs font-bold text-slate-900">Dr. Priyanka Katewa</p>
@@ -296,7 +297,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                 <img
                   src="/images/dr-priyanka.jpg"
                   alt="Dr. Priyanka Katewa - Lead Dentist Dental House Jaipur"
-                  className="w-full h-auto object-cover aspect-[4/5]"
+                  className="w-full h-auto object-cover aspect-square"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
 

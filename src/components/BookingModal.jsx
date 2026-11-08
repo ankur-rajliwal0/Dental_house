@@ -138,7 +138,8 @@ export default function BookingModal({ isOpen, onClose, defaultService = 'Smile 
                 <img 
                   src="/images/dr-priyanka.jpg" 
                   alt="Dr. Priyanka Katewa" 
-                  className="w-12 h-12 rounded-full object-cover object-top border-2 border-cyan-500 shadow-sm"
+                  className="w-12 h-12 rounded-full object-cover border-2 border-cyan-500 shadow-sm"
+                  style={{ objectPosition: '62% 22%' }}
                 />
                 <div className="text-xs">
                   <p className="font-bold text-slate-900">Dr. Priyanka Katewa, B.D.S.</p>
