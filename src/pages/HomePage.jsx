@@ -39,7 +39,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
               {/* Doctor & Location pill */}
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs font-bold shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-cyan-500 animate-ping" />
-                <span>Dr. Priyanka Katewa, B.D.S. (Mahatma Gandhi College)</span>
+                <span>Dr. Priyanka Katewa, B.D.S., FAAD • Reg. No. A-6352</span>
                 <span className="text-cyan-300">•</span>
                 <span className="text-slate-600">Jaipur</span>
               </div>
@@ -144,7 +144,7 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
                       />
                       <div>
                         <p className="text-xs font-bold text-slate-900">Dr. Priyanka Katewa</p>
-                        <p className="text-[10px] text-cyan-700 font-semibold">B.D.S. (Mahatma Gandhi College)</p>
+                        <p className="text-[10px] text-cyan-700 font-semibold">B.D.S. • FAAD (Reg. No. A-6352)</p>
                       </div>
                     </div>
 
@@ -303,8 +303,8 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
 
                 <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-lg">
                   <h3 className="text-lg font-outfit font-bold text-slate-900">Dr. Priyanka Katewa</h3>
-                  <p className="text-xs text-cyan-700 font-semibold">B.D.S. (Mahatma Gandhi College)</p>
-                  <p className="text-[11px] text-slate-600 mt-1">Founder & Chief Smile Makeover Surgeon</p>
+                  <p className="text-xs text-cyan-700 font-semibold">B.D.S. • FAAD (Fellow in Aesthetic Dentistry)</p>
+                  <p className="text-[11px] text-slate-600 mt-1">State Dental Council Reg. No. A-6352</p>
                 </div>
               </div>
             </div>
@@ -321,31 +321,31 @@ export default function HomePage({ setActivePage, onOpenBooking, onOpenQuiz, onO
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Graduated from the prestigious <strong>Mahatma Gandhi Dental College & Hospital</strong>, Dr. Priyanka Katewa has dedicated over a decade to mastering the delicate intersection of facial aesthetics and conservative restorative dentistry.
+                Graduated from the prestigious <strong>Mahatma Gandhi Dental College & Hospital</strong>, Dr. Priyanka Katewa holds a formal <strong>Fellowship in Advanced Aesthetic Dentistry (FAAD)</strong> awarded by the <strong>Indo-German Board of Aesthetic Medicine & Surgery</strong> in collaboration with <strong>University Medicine Greifswald, Germany</strong>. Formally certified in <strong>Digital Smile Design & Facial Aesthetics</strong> and <strong>Soft Tissue Laser in Dentistry</strong> by ILAMED, she brings verified international clinical precision to Jaipur (State Dental Council Reg. No. A-6352).
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                 <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start space-x-3">
                   <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
                   <div className="text-xs">
-                    <p className="font-bold text-slate-900">B.D.S. Accredited Surgeon</p>
-                    <p className="text-slate-500">Trained under international dental mentors</p>
+                    <p className="font-bold text-slate-900">State Council Reg. A-6352</p>
+                    <p className="text-slate-500">B.D.S. Accredited (Dentists Act, 1948)</p>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start space-x-3">
                   <CheckCircle2 className="w-4 h-4 text-indigo-600 shrink-0 mt-0.5" />
                   <div className="text-xs">
-                    <p className="font-bold text-slate-900">Digital Smile Design Pioneer</p>
-                    <p className="text-slate-500">Precise 3D computerized mock-up preview</p>
+                    <p className="font-bold text-slate-900">FAAD Fellow (Indo-German)</p>
+                    <p className="text-slate-500">In collab. with Univ. Greifswald, Germany</p>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start space-x-3">
-                  <CheckCircle2 className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <div className="text-xs">
-                    <p className="font-bold text-slate-900">Patient-First Ethics</p>
-                    <p className="text-slate-500">Conservative tooth-saving philosophy</p>
+                    <p className="font-bold text-slate-900">DSD & Laser Certified</p>
+                    <p className="text-slate-500">ILAMED Digital Smile & Soft Tissue Laser</p>
                   </div>
                 </div>
               </div>

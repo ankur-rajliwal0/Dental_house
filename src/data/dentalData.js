@@ -3,11 +3,15 @@ export const CLINIC_INFO = {
   tagline: "Advanced Smile Design & Aesthetic Dental Care",
   leadDoctor: {
     name: "Dr. Priyanka Katewa",
-    degree: "B.D.S. (Mahatma Gandhi College)",
+    degree: "B.D.S. • FAAD",
+    degreesFull: "B.D.S. (Mahatma Gandhi College) • FAAD (Fellowship in Advanced Aesthetic Dentistry)",
+    regNo: "A-6352",
+    regCouncil: "State Dental Council (Dentists Act, 1948)",
+    fellowship: "Fellowship in Advanced Aesthetic Dentistry (Indo-German Board & Univ. Greifswald, Germany)",
     title: "Chief Cosmetic Dental Surgeon & Smile Architect",
     experience: "10+ Years of Aesthetic Excellence",
-    specialty: "Digital Smile Makeover, Ceramic Veneers & Restorative Dentistry",
-    bio: "Dr. Priyanka Katewa is a distinguished dental surgeon renowned for her meticulous approach to smile aesthetics and gentle, patient-centric treatment protocols. Graduated from the prestigious Mahatma Gandhi Dental College & Hospital, she combines facial aesthetic principles with ultra-precise digital dentistry to craft smiles that exude confidence, radiance, and longevity.",
+    specialty: "Digital Smile Makeover, Ceramic Veneers, Soft Tissue Laser & Restorative Dentistry",
+    bio: "Dr. Priyanka Katewa (B.D.S., Reg. No. A-6352) is an accomplished dental surgeon and Fellow in Advanced Aesthetic Dentistry (FAAD, awarded by the Indo-German Board of Aesthetic Medicine & Surgery in collaboration with University Medicine Greifswald, Germany). Graduated from the prestigious Mahatma Gandhi Dental College & Hospital, Jaipur, and certified by ILAMED in Digital Smile Design, Facial Aesthetics, and Soft Tissue Laser Dentistry, she combines international aesthetic mastery with gentle, conservative tooth-saving care.",
     image: "/images/dr-priyanka.jpg",
   },
   phone: "9166857779",
@@ -572,5 +576,58 @@ export const TRANSFORMATIONS_DATA = [
     story: "Comprehensive smile makeover using golden ratio proportions and ultra-thin ceramic veneers, elevating tooth shade by multiple levels and eliminating all spacing effortlessly.",
     tags: ["Digital Smile Design", "Hollywood Radiance", "Spacing Fix", "Porcelain Shells"],
   },
+];
+
+export const DOCTOR_CREDENTIALS = [
+  {
+    id: "reg-council",
+    badge: "Official Council Registration",
+    title: "State Dental Council Registration",
+    credential: "Reg. No. A-6352",
+    authority: "Registered Dental Surgeon (Dentists Act, 1948)",
+    detail: "Official statutory registration with State Dental Council authorizing clinical and surgical dental practice in Jaipur, Rajasthan.",
+    image: "/images/certificates/cert-dental-council-registration.jpg",
+    highlight: "Reg. No. A-6352"
+  },
+  {
+    id: "fellowship-faad",
+    badge: "International Fellowship",
+    title: "Fellowship in Advanced Aesthetic Dentistry (FAAD)",
+    credential: "FAAD Fellow",
+    authority: "ILAMED & Indo-German Board of Aesthetic Medicine & Surgery",
+    detail: "Conducted in collaboration with Prof. Dr. H. R. Metelmann, Dept. of Maxillo-Facial & Plastic Surgery, University Medicine Greifswald, Germany. Advanced clinical training in full aesthetic rehabilitations, smile design & ceramic veneers.",
+    image: "/images/certificates/cert-fellowship-aesthetic-dentistry.jpg",
+    highlight: "Indo-German Board Certified"
+  },
+  {
+    id: "digital-smile-design",
+    badge: "Aesthetic Specialization",
+    title: "Certificate in Digital Smile Design & Facial Aesthetics",
+    credential: "DSD Certified",
+    authority: "Institute of Laser & Aesthetic Medicine (ILAMED Dental)",
+    detail: "Specialized certification in 3D digital smile simulation, golden ratio facial analysis (1:1.618), lip dynamics, and computer-guided smile previews.",
+    image: "/images/certificates/cert-digital-smile-design.jpg",
+    highlight: "3D DSD Specialist"
+  },
+  {
+    id: "soft-tissue-laser",
+    badge: "Laser Technology",
+    title: "Certificate in Soft Tissue Laser in Dentistry",
+    credential: "Laser Certified",
+    authority: "ILAMED Dental (Institute of Laser & Aesthetic Medicine)",
+    detail: "Certified clinical expertise in gentle diode laser gingivoplasty, aesthetic gum contouring, and bloodless periodontal soft-tissue sculpting.",
+    image: "/images/certificates/cert-soft-tissue-laser.jpg",
+    highlight: "Diode Laser Certified"
+  },
+  {
+    id: "bds-degree",
+    badge: "Foundational Dental Surgery",
+    title: "Bachelor of Dental Surgery (B.D.S.)",
+    credential: "B.D.S. Graduate",
+    authority: "Mahatma Gandhi Dental College & Hospital, Jaipur",
+    detail: "Graduated from Rajasthan's prestigious dental institute with over a decade of dedicated clinical practice in restorative aesthetics and patient-centric oral surgery.",
+    image: null,
+    highlight: "Mahatma Gandhi College"
+  }
 ];
 

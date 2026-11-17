@@ -69,7 +69,7 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Welcome to the pinnacle of aesthetic dentistry at <strong>Dental House</strong>. Directed by <strong>Dr. Priyanka Katewa</strong> (B.D.S. Mahatma Gandhi College), we create photogenic, radiant smiles using 3D Digital Smile Design and ultra-thin porcelain veneers.
+              Welcome to the pinnacle of aesthetic dentistry at <strong>Dental House</strong>. Directed by <strong>Dr. Priyanka Katewa</strong> (B.D.S., FAAD • Reg. No. A-6352, Fellow in Advanced Aesthetic Dentistry — Indo-German Board & Greifswald Germany), we create photogenic, radiant smiles using 3D Digital Smile Design and ultra-thin porcelain veneers.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
@@ -121,9 +121,12 @@ export default function SmileDesignPage({ onOpenBooking, onOpenQuiz, onOpenSimul
                 </p>
               </div>
 
-              <div className="shrink-0 flex items-center space-x-2">
+              <div className="shrink-0 flex flex-wrap items-center gap-2">
                 <span className="px-3 py-1.5 rounded-xl bg-cyan-100 border border-cyan-200 text-cyan-800 text-xs font-bold">
-                  Gentle & Comfortable
+                  ILAMED DSD Certified
+                </span>
+                <span className="px-3 py-1.5 rounded-xl bg-indigo-100 border border-indigo-200 text-indigo-800 text-xs font-bold">
+                  FAAD Fellow
                 </span>
                 <span className="px-3 py-1.5 rounded-xl bg-emerald-100 border border-emerald-200 text-emerald-800 text-xs font-bold">
                   2 Clinic Visits

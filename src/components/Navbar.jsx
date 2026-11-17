@@ -66,7 +66,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking, onOpe
           <div className="flex items-center space-x-6">
             <span className="flex items-center space-x-1.5 text-cyan-800 font-semibold">
               <ShieldCheck className="w-3.5 h-3.5 text-cyan-600" />
-              <span>Dr. Priyanka Katewa, B.D.S. (Mahatma Gandhi College)</span>
+              <span>Dr. Priyanka Katewa, B.D.S., FAAD • Reg. No. A-6352</span>
             </span>
             <span className="flex items-center space-x-1.5 text-slate-500">
               <MapPin className="w-3.5 h-3.5 text-slate-400" />

@@ -142,8 +142,8 @@ export default function BookingModal({ isOpen, onClose, defaultService = 'Smile 
                   style={{ objectPosition: '62% 22%' }}
                 />
                 <div className="text-xs">
-                  <p className="font-bold text-slate-900">Dr. Priyanka Katewa, B.D.S.</p>
-                  <p className="text-slate-500">Smile Architect & Cosmetic Surgeon • Mahatma Gandhi College</p>
+                  <p className="font-bold text-slate-900">Dr. Priyanka Katewa, B.D.S., FAAD</p>
+                  <p className="text-slate-500">Reg. No. A-6352 • Fellow in Advanced Aesthetic Dentistry (Indo-German Board)</p>
                 </div>
               </div>
 

@@ -91,7 +91,7 @@ export default function Footer({ setActivePage, onOpenBooking }) {
             </div>
 
             <p className="text-xs text-slate-600 leading-relaxed">
-              Founded & led by <strong>Dr. Priyanka Katewa</strong>, B.D.S. (Mahatma Gandhi College). Specializing in high-end Digital Smile Design, aesthetic ceramic veneers, and gentle restorative dental care in Jaipur.
+              Founded & led by <strong>Dr. Priyanka Katewa</strong>, B.D.S., FAAD (State Dental Council Reg. No. A-6352). Fellow in Advanced Aesthetic Dentistry (Indo-German Board) & certified in Digital Smile Design and Soft Tissue Lasers (ILAMED).
             </p>
 
             <div className="pt-1 flex items-center space-x-2 text-xs text-cyan-800 font-semibold">
